@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container-body {
+    width: 100%;
+    height: 100%;
+    background-color: #12121f;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar {
+    width: 80%;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin: 30px;
+}
+
+.header {
+    background-color: #0b9b94;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    padding-top: 40px;
+}
+.btn-size{
+    width: 200px;
+    height: 60px;
+}
+
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.month h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p {
+    font-size: 1.6rem;
+}
+.weekdays div {
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.prev-date,
+.next-date {
+    color: red;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.days div {
+    font-size: 1.4rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+ }
+.color-red {
+    color: red;
+}
+.today {
+    background-color: #0b9b94;
+}
+.todayByYear {
+    background-color: #12121f;
+}
+.inputField button {
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0.4;
+}
+.inputField button.active {
+    opacity: 2;
+    pointer-events: auto;
+}
+.todoList li {
+    position: relative;
+    list-style: none;
+    width: 340px;
+    height: 60px;
+    background: #12121f;
+    color: #a8b2c4;
+    padding: 0 15px;
+    line-height: 60px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: default;
+    overflow: hidden;
+  }
+.todoList li i {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3 ease;
+  }
+.todoList li:hover i {
+    right: 5px;
+}
+.btnEdit {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    background-color:#12121f;
+    border: none;
+}
+.btnEdit:hover {
+    right: 35px;
+}
+.showTask {
+    margin:  0 auto;
+    width: 50%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #167e56;
+    border-radius: 24px;
+    padding: 10px 60px 60px 60px;
+}
+
+.modal {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.task-menu {
+    list-style: none;
+    font-size: 60%;
+}
+.task-menu-day {
+    list-style: none;
+    font-size: 60%;
+}
+.task-menu-day li {
+    border: 1px solid white;
+    margin: 5px;
+    border-radius: 15px;
+}
+.task-menu li {
+    border: 1px solid #0b9b94;
+    margin: 5px;
+    border-radius: 15px;
+    color: #fff;
+}
+.border-day {
+    cursor: pointer;
+}
+.calendarByYear {
+    display: none;
+    background-color: #12121f;
+    width: 100%;
+    height: 100%;
+    position: fixed; /* vị trí cố định */
+    z-index: 4; /* Ưu tiên hiển thị trên cùng */
+    margin-top: 0px;
+}
+
+.monthByYear {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+    font-size: 120%;
+    color: #12121f;
+}
+.dayss {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+    color: #12121f;
+}
+.grid-calendar {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 60%;
+    background-color: gray;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.monthbyyear {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+}
+
+.yearNext {
+    width: 50%;
+    margin:  0 auto;
+}
+.yearNext i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}

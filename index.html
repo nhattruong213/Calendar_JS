@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container-body">
+        <div class="calendar">
+            <div class="header align-items-center">
+                <div class="row">
+                    <div class="col-lg-8 ">
+                        <div class="d-flex justify-content-start">
+                            <button class="btn-size btn btn-secondary">Month</button>
+                            <button class="btnYear btn-size btn btn-secondary ml-3">Year</button>
+                        </div>
+                    </div>
+                    <div class="month col-lg-4 d-flex align-items-center justify-content-between">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="weekdays align-items-center text-center ">
+                <div class="color-red">Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div class="color-red">Sat</div>
+            </div>
+            <div class="days text-center"></div>
+        </div>
+        <div class="modal">
+            <div class="showTask">
+                <h1>To do list</h1>
+                <div class="aa">
+                    <p></p>
+                </div>
+                <div class="inputField">
+                    <input type="text" placeholder="Enter New Task">
+                    <button class="btn btn-secondary">Add</button>
+                </div>
+                <ul class="todoList mt-5">
+    
+                </ul>
+            </div>
+        </div>
+        <div class="calendarByYear">
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btnMonth btn-size btn btn-secondary">Month</button>
+                <button class="btnYear btn-size btn btn-secondary ml-3">Year</button>
+            </div>
+            <div class="yearNext d-flex align-items-center justify-content-between mt-5">
+                <i class="fas fa-angle-left prevYear"></i>
+                <div class="Year">
+                    <h1></h1>
+                </div>
+                <i class="fas fa-angle-right nextYear"></i>
+            </div>
+               <div class="grid-calendar">
+                    
+               </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
